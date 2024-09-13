@@ -1,0 +1,20 @@
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.component.css">
+
+    <h2>Login Form</h2>
+    <form #formreq="ngForm" (ngSubmit)="login(formreq)">
+        <div id="user">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" ngModel required>
+        <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" ngModel required>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
